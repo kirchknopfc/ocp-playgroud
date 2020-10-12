@@ -1,0 +1,41 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  annotations:
+    openshift.io/generated-by: OpenShiftNewApp
+  labels:
+    app: weather
+    app.kubernetes.io/component: weather
+    app.kubernetes.io/instance: weather
+    app.kubernetes.io/name: nodejs
+  name: weather
+  namespace: weather
+spec:
+  failedBuildsHistoryLimit: 5
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'weather:latest'
+  postCommit: {}
+  resources: {}
+  runPolicy: Serial
+  source:
+    contextDir: weather
+    git:
+      ref: weather
+      uri: 'https://github.com/kirchknopfc/DO101-apps.git'
+    type: Git
+  strategy:
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: 'nodejs:10'
+        namespace: openshift
+    type: Source
+  successfulBuildsHistoryLimit: 5
+  triggers:
+    - github:
+        secret: RDhcNpBgGeK1DeG-UXdC
+      type: GitHub
+    - generic:
+        secret: KSgpzSLKFT3v6sjJjuQh
