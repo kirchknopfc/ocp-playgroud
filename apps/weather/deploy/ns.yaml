@@ -1,0 +1,10 @@
+kind: Project
+apiVersion: project.openshift.io/v1
+metadata:
+  name: weather
+  annotations:
+    openshift.io/description: 'weather'
+    openshift.io/display-name: 'weather'
+spec:
+  finalizers:
+    - kubernetes
