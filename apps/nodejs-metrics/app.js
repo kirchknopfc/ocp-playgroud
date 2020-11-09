@@ -17,7 +17,7 @@ app.use(morgan('combined'))
 
 // Root
 app.get('/', function (req, res) {
-  res.send('<h1>nodejs metrics sample app</h1><h3>${hostname}</h3><a href="./actuator/prometheus">metrics<a/><br><a href="./env">env<a/>');
+  res.send('<h1>nodejs metrics sample app</h1><h3>' + hostname + '</h3><a href="./actuator/prometheus">metrics<a/><br><a href="./env">env<a/>');
 });
 
 // env
