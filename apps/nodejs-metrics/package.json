@@ -1,7 +1,7 @@
 {
   "name": "myapp",
   "version": "1.0.0",
-  "description": "Test Express",
+  "description": "Nodejs Metrics sample",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
