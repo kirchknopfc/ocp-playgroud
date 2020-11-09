@@ -7,6 +7,7 @@ const morgan = require('morgan');
 const port = process.env.PORT || "8080";
 const metricsFile = process.env.METRICS_FILE || 'metrics/prometheus.txt';
 const metricsUrl = process.env.METRICS_URL || '/actuator/prometheus';
+const hostname = process.env.HOSTNAME;
 
 // APP
 const app = express();
@@ -16,7 +17,7 @@ app.use(morgan('combined'))
 
 // Root
 app.get('/', function (req, res) {
-  res.send('<h1>NodeJs Metrics Sample App</h1><br><a href="./actuator/prometheus">metrics<a/><br><a href="./env">env<a/>');
+  res.send('<h1>nodejs metrics sample app</h1><h3>${hostname}</h3><a href="./actuator/prometheus">metrics<a/><br><a href="./env">env<a/>');
 });
 
 // env
