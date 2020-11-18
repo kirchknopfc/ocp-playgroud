@@ -1,4 +1,3 @@
-# NodeJs metrics sample application
 
 
 ### Enviroment Vars
