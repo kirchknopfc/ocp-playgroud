@@ -16,7 +16,7 @@
 oc project brz-daisy-qa
 
 # Create App
-oc new-app --name daisy-cockpit-backend --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -l app=daisy-cockpit-backend
+oc new-app --name daisy-cockpit-backend --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE= -l app=daisy-cockpit-backend
 
 # Expose (create route)
 oc expose svc/daisy-cockpit-backend
