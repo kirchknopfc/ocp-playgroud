@@ -30,8 +30,7 @@ app.get('/env', function (req, res) {
 if (metricsFile.startsWith('./'))
 {
   app.use(metricsUrl, express.static(path.join(__dirname, metricsFile)));
-}
-else {
+} else if (metricsFile != null && metricsFile != ''){
   app.use(metricsUrl, express.static(metricsFile));
 }
 

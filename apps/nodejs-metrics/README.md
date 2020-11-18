@@ -14,16 +14,31 @@
 
 oc project brz-daisy-qa
 
-# Create App
-oc new-app --name daisy-cockpit-backend --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE= -l app=daisy-cockpit-backend
+# daisy-analysebox-instance
+oc new-app --name daisy-analysebox-instance-55555002-2020011 --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE=./metrics/daisy-analysebox-instance.txt -l daisy_caseid=55555002-2020011
+
+oc new-app --name daisy-analysebox-instance-55555002-2020011 --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE=./metrics/daisy-analysebox-instance.txt -l daisy_caseid=55555002-2020011
+
+# daisy-casestate-webservice
+oc new-app --name daisy-casestate-webservice --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE=./metrics/daisy-casestate-webservice.txt -l app=daisy-casestate-webservice
+
+# daisy-cockpit-backend
+oc new-app --name daisy-cockpit-backend --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE=./metrics/daisy-cockpit-backend.txt -l app=daisy-cockpit-backend
+
+# daisy-digishare-webservice
+oc new-app --name daisy-digishare-webservice --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -e METRICS_FILE=./metrics/daisy-digishare-webservice.txt -l app=daisy-digishare-webservice
+
 
 # Expose (create route)
+oc expose svc/daisy-analysebox-instance-55555002-2020011 
+oc expose svc/daisy-casestate-webservice 
 oc expose svc/daisy-cockpit-backend
+oc expose svc/daisy-digishare-webservice
 
 oc get all -l app=daisy-casestate-webservice
 
 ## delete 
-oc delete all -l app=daisy-casestate-webservice
+oc delete all -l app=daisy-cockpit-backend
 ```
 
 ### Service Monitor
@@ -56,6 +71,7 @@ spec:
       - daisy-casestate-webservice
       - daisy-cockpit-backend
       - daisy-digishare-webservice
+      - daisy-analysebox-instance
 EOF
 ```
 
