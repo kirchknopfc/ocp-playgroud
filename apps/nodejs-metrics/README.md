@@ -12,11 +12,14 @@
 
 ### Deploy in OpenShift
 ```shell
+
+oc project brz-daisy-qa
+
 # Create App
-oc new-app --name daisy-casestate-webservice --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -l app=daisy-casestate-webservice
+oc new-app --name daisy-cockpit-backend --strategy=source --image-stream nodejs:latest --code https://github.com/kirchknopfc/ocp-playgroud/ --context-dir=/apps/nodejs-metrics -e PORT=8080 -l app=daisy-cockpit-backend
 
 # Expose (create route)
-oc expose svc/daisy-casestate-webservice
+oc expose svc/daisy-cockpit-backend
 
 oc get all -l app=daisy-casestate-webservice
 

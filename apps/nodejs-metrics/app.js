@@ -5,7 +5,7 @@ const morgan = require('morgan');
 
 // Env Variabels
 const port = process.env.PORT || "8080";
-const metricsFile = process.env.METRICS_FILE || 'metrics/prometheus.txt';
+const metricsFile = process.env.METRICS_FILE || './metrics/prometheus.txt';
 const metricsUrl = process.env.METRICS_URL || '/actuator/prometheus';
 const hostname = process.env.HOSTNAME;
 
@@ -27,7 +27,13 @@ app.get('/env', function (req, res) {
 });
 
 // metrics
-app.use(metricsUrl, express.static(path.join(__dirname, metricsFile)));
+if (metricsFile.startsWith('./'))
+{
+  app.use(metricsUrl, express.static(path.join(__dirname, metricsFile)));
+}
+else {
+  app.use(metricsUrl, express.static(metricsFile));
+}
 
 // Start Server
 app.listen(port, () => {

@@ -1,0 +1,154 @@
+# HELP http_server_requests_seconds  
+# TYPE http_server_requests_seconds summary
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/document/config",} 104.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/document/config",} 0.256809044
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/available",} 2.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/available",} 0.015916453
+http_server_requests_seconds_count{exception="None",method="POST",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/trigger-state-change",} 5.0
+http_server_requests_seconds_sum{exception="None",method="POST",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/trigger-state-change",} 356.521840588
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/enabled",} 146.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/enabled",} 0.235395639
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus",} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus",} 0.066322016
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/evidencestructure",} 134.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/evidencestructure",} 0.65815975
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processes",} 29.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processes",} 0.15644364
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases",} 169.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases",} 0.937977251
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/investigationdocuments",} 89.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/investigationdocuments",} 0.324309416
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users",} 25.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users",} 0.145602506
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrconfig",} 145.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrconfig",} 0.326963893
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/digisharestatus",} 257.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/digisharestatus",} 0.242632494
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}/items",} 13.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}/items",} 0.452699831
+http_server_requests_seconds_count{exception="None",method="PUT",outcome="SUCCESS",status="200",uri="/v1/userprofile",} 183.0
+http_server_requests_seconds_sum{exception="None",method="PUT",outcome="SUCCESS",status="200",uri="/v1/userprofile",} 1.544805812
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}",} 11532.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}",} 29.090992878
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="403",uri="root",} 25.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="403",uri="root",} 0.045893224
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/config",} 55.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/config",} 9.291046052
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/service/cases",} 6987.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/service/cases",} 228.493638328
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/ocrstatus",} 258.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/ocrstatus",} 0.244657728
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/settings",} 15.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/settings",} 0.00974749
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/system/environment",} 10.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/system/environment",} 0.353951219
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/userprofile",} 3.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/userprofile",} 0.044509773
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/lastSuccessful/cases/{caseId}",} 5.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/lastSuccessful/cases/{caseId}",} 0.393633437
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processingstatus",} 3637.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processingstatus",} 2.901586149
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/statistics",} 1.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/statistics",} 0.034954705
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/sessions/metrics",} 4777.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/sessions/metrics",} 7.225360414
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/userprofile/{key}",} 44.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/userprofile/{key}",} 0.285567975
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/dttstatus",} 254.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/dttstatus",} 0.251795392
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/dttstatus",} 858.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/dttstatus",} 0.778193309
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users/current",} 10.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users/current",} 0.34769904
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health",} 63724.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health",} 49.408749173
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/jobs/cases/{caseId}",} 29.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/jobs/cases/{caseId}",} 0.04323485
+http_server_requests_seconds_count{exception="NullPointerException",method="GET",outcome="SERVER_ERROR",status="500",uri="/v1/cases/{caseId}/investigationdocuments",} 14.0
+http_server_requests_seconds_sum{exception="NullPointerException",method="GET",outcome="SERVER_ERROR",status="500",uri="/v1/cases/{caseId}/investigationdocuments",} 0.071922145
+http_server_requests_seconds_count{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/config",} 48.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/config",} 0.026552978
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/operator/status",} 3666.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/operator/status",} 7.139719499
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrstatus",} 854.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrstatus",} 0.531538543
+http_server_requests_seconds_count{exception="None",method="PUT",outcome="CLIENT_ERROR",status="403",uri="root",} 30.0
+http_server_requests_seconds_sum{exception="None",method="PUT",outcome="CLIENT_ERROR",status="403",uri="root",} 0.010764926
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/digisharestatus",} 855.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/digisharestatus",} 0.57623033
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}",} 5380.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}",} 9.554843275
+http_server_requests_seconds_count{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/users",} 329.0
+http_server_requests_seconds_sum{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/users",} 1.032964202
+# HELP http_server_requests_seconds_max  
+# TYPE http_server_requests_seconds_max gauge
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/document/config",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/available",} 0.0
+http_server_requests_seconds_max{exception="None",method="POST",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/trigger-state-change",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/modules/enabled",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/prometheus",} 0.066322016
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/evidencestructure",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processes",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/investigationdocuments",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrconfig",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/digisharestatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}/items",} 0.0
+http_server_requests_seconds_max{exception="None",method="PUT",outcome="SUCCESS",status="200",uri="/v1/userprofile",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/{workspaceId}",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="403",uri="root",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/config",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/service/cases",} 0.014942337
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/ocrstatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/settings",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/system/environment",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/workspaces/userprofile",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/lastSuccessful/cases/{caseId}",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/processingstatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/statistics",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/sessions/metrics",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/userprofile/{key}",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/dttstatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/dttstatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/users/current",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/actuator/health",} 0.001313444
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/backups/jobs/cases/{caseId}",} 0.0
+http_server_requests_seconds_max{exception="NullPointerException",method="GET",outcome="SERVER_ERROR",status="500",uri="/v1/cases/{caseId}/investigationdocuments",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="CLIENT_ERROR",status="404",uri="/v1/cases/{caseId}/config",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/operator/status",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/ocrstatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="PUT",outcome="CLIENT_ERROR",status="403",uri="root",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/digisharestatus",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}",} 0.0
+http_server_requests_seconds_max{exception="None",method="GET",outcome="SUCCESS",status="200",uri="/v1/cases/{caseId}/users",} 0.0
+# HELP jetty_threads_config_max The maximum number of threads in the pool
+# TYPE jetty_threads_config_max gauge
+jetty_threads_config_max 200.0
+# HELP daisy_cases_ldap_update_count Ldap update count
+# TYPE daisy_cases_ldap_update_count gauge
+daisy_cases_ldap_update_count 349.0
+# HELP resilience4j_retry_calls_total The number of successful calls without a retry attempt
+# TYPE resilience4j_retry_calls_total counter
+resilience4j_retry_calls_total{kind="failed_with_retry",name="api",} 5.0
+resilience4j_retry_calls_total{kind="successful_with_retry",name="api",} 0.0
+resilience4j_retry_calls_total{kind="failed_without_retry",name="api",} 0.0
+resilience4j_retry_calls_total{kind="successful_without_retry",name="api",} 3.0
+# HELP jetty_threads_jobs Number of jobs queued waiting for a thread
+# TYPE jetty_threads_jobs gauge
+jetty_threads_jobs 0.0
+# HELP jetty_threads_current The total number of threads in the pool
+# TYPE jetty_threads_current gauge
+jetty_threads_current 8.0
+# HELP jetty_threads_config_min The minimum number of threads in the pool
+# TYPE jetty_threads_config_min gauge
+jetty_threads_config_min 8.0
+# HELP jetty_threads_busy The number of busy threads in the pool
+# TYPE jetty_threads_busy gauge
+jetty_threads_busy 3.0
+# HELP daisy_cases_ldap_error_count Ldap error count
+# TYPE daisy_cases_ldap_error_count gauge
+daisy_cases_ldap_error_count 0.0
+# HELP jetty_threads_idle The number of idle threads in the pool
+# TYPE jetty_threads_idle gauge
+jetty_threads_idle 4.0
