@@ -1,0 +1,51 @@
+---
+# Deplyoment
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: weather
+  labels:
+    app: weather
+    app.openshift.io/runtime: nodejs
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: weather
+  template:
+    metadata:
+      labels:
+        app: weather
+        pod.cp.cna.at/ingress: allow
+    spec:
+      containers:
+        - name: weather
+          image: quay.io/christian_kirchknopf/weather-app
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: OWM_API_KEY
+              value: 75845ec718221fb4c003611059a8a226              
+          resources:
+            requests:
+              cpu: 100m
+              memory: 128Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
+          livenessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 30
+            timeoutSeconds: 5
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 8080
+            initialDelaySeconds: 5
+            periodSeconds: 30
+            timeoutSeconds: 5

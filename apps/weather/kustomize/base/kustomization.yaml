@@ -1,0 +1,20 @@
+---
+# weather deployment
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources: 
+- deployment.yaml
+- route.yaml
+- service.yaml
+
+replicas:
+- name: weather
+  count: 1
+
+images:
+ - name: quay.io/christian_kirchknopf/weather-app
+   newName: quay.io/christian_kirchknopf/weather-app
+   newTag: latest
+
+patches: []
